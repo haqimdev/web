@@ -1,27 +1,43 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
+  .container {
+  position: relative;
+
+}
+
 body {
-  background-image: url("flwr_pinkblue.jpg");
+  /* background-image: url("flwr_pinkblue.jpg"); */
+  background-color: bisque;
   background-repeat: no-repeat;
   background-position: center top;
-  background-size: 600px 1000px;
+
+  margin: auto; 
 }
 @font-face {
   font-family:fnt_bema;
   src: url(BeautifulMarry.otf);
 }
 #mycouplename {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   font-family: fnt_bema;
-  font-size: 300%;
+  font-size: 500%;
   color: rgb(8, 146, 180);
   padding: 40px;
   text-align: center;
   text-shadow: 2px 3px rgb(26, 209, 185);
 }
 #myWish {
-  color: rgb(236, 236, 236);
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(158, 116, 144);
   font-size: 200%;
   padding: 40px;
   text-align: center;
@@ -29,11 +45,16 @@ body {
 }
 
 </style>
-</head>
 <body>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<h3 id="myWish">WALIMATULURUS</h3>
-<div id="mycouplename">Haqim & Azira</divp>
+<!-- <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<img src="bd_pinkrose.png" alt="border" style="float:center;width:600px;height:800px;" >
+<p id="myWish">WALIMATULURUS <p id="mycouplename">Haqim & Azira</p> -->
+
+<div class="container">
+  <img src="bd_pinkrose_gmp.png" alt="border" style="width:100%;">
+  <div id="myWish" >WALIMATULURUS</div>
+  <div id="mycouplename">Haqim & Azira</div>
+</div>
 
 </body>
 </html>
